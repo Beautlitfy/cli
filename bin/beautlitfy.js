@@ -11,6 +11,10 @@ program
 	.command('serve')
 	.action(lib.serve);
 
+program
+	.command('build')
+	.action(lib.build);
+
 program.parse(process.argv);
 
 process.on('SIGINT', function() {
